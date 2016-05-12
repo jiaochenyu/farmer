@@ -26,7 +26,9 @@ public class MainActivity extends AppCompatActivity {
     ///fwfwfw
 
 	//caofujun
-/// cfjjjj
+
+
+/// cfjjjj       
 
 
     private static final int HOME = 0;
