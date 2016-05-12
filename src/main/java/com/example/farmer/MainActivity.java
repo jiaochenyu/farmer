@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
 
 	//caofujun
 
-
-/// cfjjjj   wocao      
+//aaaaa
+/// cfjjjj   wo     cao      
 
 
     private static final int HOME = 0;
