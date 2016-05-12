@@ -1,4 +1,9 @@
 ﻿package com.example.farmer;
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 15fe07a70fad8d4bf2d3c8f156af3bd09a63db2c
 
 
 import android.os.Bundle;
@@ -15,8 +20,15 @@ import com.example.farmer.fragment.SortFragment;
 import com.example.farmer.fragment.UserFragment;
 
 public class MainActivity extends AppCompatActivity {
+
+///cjq commit
+
     ///fwfwfw
+
 	//caofujun
+/// cfjjjj
+
+
     private static final int HOME = 0;
     private static final int EVENT = 1;
     private static final int SORT = 2;
