@@ -1,9 +1,6 @@
 ﻿package com.example.farmer;
-<<<<<<< HEAD
-=======
+// jjjjjjjj
 
-
->>>>>>> 15fe07a70fad8d4bf2d3c8f156af3bd09a63db2c
 
 
 import android.os.Bundle;
