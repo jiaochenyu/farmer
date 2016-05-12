@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#CDCD00"
+              android:orientation="vertical"
+    >
+    <!-- 顶部标题栏 -->
+    <RelativeLayout
+        android:id="@+id/hometitle"
+        style="@style/pagetitle"
+        >
+
+        <TextView
+            android:id="@+id/homecity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/spinner_bg_n"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:layout_alignParentLeft="true"
+            android:textSize="12sp"
+
+            />
+
+        <ImageView
+            android:id="@+id/homeicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:src="@drawable/navbar_logo"/>
+
+        <ImageView
+            android:id="@+id/homesearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:src="@drawable/tool_search_n"/>
+    </RelativeLayout>
+
+    <!-- 内容 -->
+    <ScrollView
+        android:id="@+id/homecontent"
+        style="@style/pagecontent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="downPic"
+                android:text="下载图片!"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

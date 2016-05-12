@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+    <RadioGroup
+        android:id="@+id/group"
+        style="@style/mw"
+        android:background="@color/bottomColor"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/home"
+            style="@style/radio"
+            android:drawableTop="@drawable/home"
+            android:checked="true"
+            android:text="首页"
+            />
+        <RadioButton
+            android:id="@+id/event"
+            style="@style/radio"
+            android:drawableTop="@drawable/event"
+            android:text="活动"/>
+        <RadioButton
+            android:id="@+id/sort"
+            style="@style/radio"
+            android:drawableTop="@drawable/sort"
+            android:text="分类"/>
+        <RadioButton
+            android:id="@+id/car"
+            style="@style/radio"
+            android:drawableTop="@drawable/car"
+            android:text="购物车"/>
+        <RadioButton
+            android:id="@+id/user"
+            style="@style/radio"
+            android:drawableTop="@drawable/user"
+            android:text="我"/>
+    </RadioGroup>
+
+</merge>
