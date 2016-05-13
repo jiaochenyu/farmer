@@ -3,7 +3,11 @@
 // jjjjjjjj
 =======
 package com.example.farmer;
+<<<<<<< Updated upstream
 >>>>>>> 3b6225e59adec80fa127043d5dbf80dd717c8ed4
+=======
+// jjjjjjjj
+>>>>>>> Stashed changes
 
 
 
@@ -22,8 +26,19 @@ import com.example.farmer.fragment.UserFragment;
 
 public class MainActivity extends AppCompatActivity {
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
+=======
+///cjq commit
+
+    ///fwfwfw
+
+	//caofujun111111111111111222222222
+
+//aaaaa
+/// cfjjjj   wo     cao      
+>>>>>>> Stashed changes
 
 
 >>>>>>> 3b6225e59adec80fa127043d5dbf80dd717c8ed4
