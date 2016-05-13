@@ -13,7 +13,7 @@ import com.example.farmer.fragment.SortFragment;
 import com.example.farmer.fragment.UserFragment;
 
 public class MainActivity extends AppCompatActivity {
-//年年有今日 
+
 
     private static final int HOME = 0;
     private static final int EVENT = 1;
