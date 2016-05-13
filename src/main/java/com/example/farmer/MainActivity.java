@@ -1,5 +1,5 @@
 ﻿package com.example.farmer;
-
+// jjjjjjjj
 
 
 
@@ -17,10 +17,6 @@ import com.example.farmer.fragment.SortFragment;
 import com.example.farmer.fragment.UserFragment;
 
 public class MainActivity extends AppCompatActivity {
-
-///cjq commit
-
-    ///fwfwfw
 
     private static final int HOME = 0;
     private static final int EVENT = 1;
