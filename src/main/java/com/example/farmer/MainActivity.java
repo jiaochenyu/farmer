@@ -17,11 +17,11 @@ import com.example.farmer.fragment.SortFragment;
 import com.example.farmer.fragment.UserFragment;
 
 public class MainActivity extends AppCompatActivity {
-<<<<<<< HEAD
+
 ///cjq commit
-=======
+
     ///fwfwfw
->>>>>>> c83131988c3091f55f3e3f047a08ae8d01b07adb
+
     private static final int HOME = 0;
     private static final int EVENT = 1;
     private static final int SORT = 2;
