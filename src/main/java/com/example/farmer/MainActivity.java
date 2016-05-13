@@ -1,4 +1,4 @@
-package com.example.farmer;
+﻿package com.example.farmer;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -13,6 +13,7 @@ import com.example.farmer.fragment.SortFragment;
 import com.example.farmer.fragment.UserFragment;
 
 public class MainActivity extends AppCompatActivity {
+
 
     private static final int HOME = 0;
     private static final int EVENT = 1;
