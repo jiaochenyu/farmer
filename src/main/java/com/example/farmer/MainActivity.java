@@ -1,5 +1,4 @@
-﻿package com.example.farmer;
-// jjjjjjjj
+package com.example.farmer;
 
 
 
@@ -18,14 +17,6 @@ import com.example.farmer.fragment.UserFragment;
 
 public class MainActivity extends AppCompatActivity {
 
-///cjq commit
-
-    ///fwfwfw
-
-	//caofujun111111111111111222222222
-
-//aaaaa
-/// cfjjjj   wo     cao      
 
 
     private static final int HOME = 0;
