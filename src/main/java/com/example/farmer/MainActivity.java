@@ -1,4 +1,12 @@
+<<<<<<< HEAD
+﻿package com.example.farmer;
+// jjjjjjjj
+=======
 package com.example.farmer;
+>>>>>>> 3b6225e59adec80fa127043d5dbf80dd717c8ed4
+
+
+
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -14,8 +22,11 @@ import com.example.farmer.fragment.UserFragment;
 
 public class MainActivity extends AppCompatActivity {
 
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> 3b6225e59adec80fa127043d5dbf80dd717c8ed4
     private static final int HOME = 0;
     private static final int EVENT = 1;
     private static final int SORT = 2;
