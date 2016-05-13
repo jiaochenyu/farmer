@@ -13,10 +13,14 @@ public class HJCActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hjc);
         jcy();
+        hjc();
+    }
+
+    private void hjc() {
+        Toast.makeText(this, "hjc", Toast.LENGTH_SHORT).show();
     }
 
     private void jcy() {
         Toast.makeText(HJCActivity.this, "JCY", Toast.LENGTH_SHORT).show();
     }
-
 }
