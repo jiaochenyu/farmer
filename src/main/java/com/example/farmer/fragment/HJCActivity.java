@@ -23,4 +23,5 @@ public class HJCActivity extends AppCompatActivity {
     private void jcy() {
         Toast.makeText(HJCActivity.this, "JCY", Toast.LENGTH_SHORT).show();
     }
+	//cjq
 }
