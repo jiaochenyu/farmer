@@ -13,22 +13,14 @@ import com.example.farmer.fragment.SortFragment;
 import com.example.farmer.fragment.UserFragment;
 
 public class MainActivity extends AppCompatActivity {
-<<<<<<< HEAD
-
 
     private static final int HOME = 1;
     private static final int EVENT = 2;
     private static final int SORT = 3;
     private static final int CAR = 4;
     private static final int USER = 5;
-=======
-    //hjcjjjjjj
-    private static final int HOME = 0;
-    private static final int EVENT = 1;
-    private static final int SORT = 2;
-    private static final int CAR = 3;
-    private static final int USER = 4;
->>>>>>> 1b1eb0ac6097d7f10498f6ae22c2030e653abef5
+
+
     RadioGroup mRadioGroup;
     FrameLayout mFrameLayout;
 

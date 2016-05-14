@@ -3,43 +3,33 @@
        style="@style/mm">
     <!-- 活动页的日期选择-->
     <LinearLayout
-        style="@style/mw"
-        android:orientation="horizontal">
-        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
             android:id="@+id/day1"
-            style="@style/event_day_style"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_weight="1"
             android:text="day1"
+            android:onClick="doSwicth"
+            android:background="@drawable/event_day"
+            />
+       <!-- <View
+            android:layout_width="1dip"
+            android:layout_height="30dip"
+            android:background="@color/toptitle"
+            />-->
+        <Button
 
-           />
-        <TextView
             android:id="@+id/day2"
-            style="@style/event_day_style"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
             android:text="day2"
-            />
-        <TextView
-            android:id="@+id/day3"
-            style="@style/event_day_style"
-            android:text="day3"
-            />
-        <TextView
-            android:id="@+id/day4"
-            style="@style/event_day_style"
-            android:text="day4"
-            />
-        <TextView
-            android:id="@+id/day5"
-            style="@style/event_day_style"
-            android:text="day5"
-            />
-        <TextView
-            android:id="@+id/day6"
-            style="@style/event_day_style"
-            android:text="day6"
-            />
-        <TextView
-            android:id="@+id/day7"
-            style="@style/event_day_style"
-            android:text="day7"
+            android:layout_weight="1"
+            android:onClick="doSwicth"
+            android:background="@drawable/event_day"
             />
     </LinearLayout>
 
