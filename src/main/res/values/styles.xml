@@ -39,7 +39,7 @@
     </style>
     <!-- scrollview 样式-->
     <style name="pagecontent">
-        <item name="android:layout_weight">26</item>
+        <item name="android:layout_weight">28</item>
         <item name="android:layout_height">0dp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:orientation">vertical</item>
@@ -50,8 +50,15 @@
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:textColor">@color/white</item>
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">15sp</item>
         <item name="android:gravity">center_vertical</item>
+    </style>
+    <!-- event 页面 活动日期 style-->
+    <style name="event_day_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+
     </style>
 
 

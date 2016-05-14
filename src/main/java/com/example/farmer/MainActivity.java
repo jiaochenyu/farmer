@@ -1,4 +1,4 @@
-﻿package com.example.farmer;
+package com.example.farmer;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -15,11 +15,11 @@ import com.example.farmer.fragment.UserFragment;
 public class MainActivity extends AppCompatActivity {
 
 
-    private static final int HOME = 0;
-    private static final int EVENT = 1;
-    private static final int SORT = 2;
-    private static final int CAR = 3;
-    private static final int USER = 4;
+    private static final int HOME = 1;
+    private static final int EVENT = 2;
+    private static final int SORT = 3;
+    private static final int CAR = 4;
+    private static final int USER = 5;
     RadioGroup mRadioGroup;
     FrameLayout mFrameLayout;
 
