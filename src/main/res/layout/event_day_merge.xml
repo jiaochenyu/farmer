@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       style="@style/mm">
+    <!-- 活动页的日期选择-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/day1"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:text="day1"
+            android:onClick="doSwicth"
+            android:background="@drawable/event_day"
+            />
+       <!-- <View
+            android:layout_width="1dip"
+            android:layout_height="30dip"
+            android:background="@color/toptitle"
+            />-->
+        <Button
+
+            android:id="@+id/day2"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:text="day2"
+            android:layout_weight="1"
+            android:onClick="doSwicth"
+            android:background="@drawable/event_day"
+            />
+    </LinearLayout>
+
+
+
+</merge>

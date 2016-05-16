@@ -2,8 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:background="#63B8FF"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              style="@style/mm">
     <!--顶部标题-->
     <RelativeLayout
         android:id="@+id/eventtitle"
@@ -13,12 +12,23 @@
             android:text="@string/eventtitle"
             />
     </RelativeLayout>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        layout="@layout/event_day_merge"/>
+
     <!-- 内容 -->
-    <ScrollView
-        android:id="@+id/eventcontent"
-        style="@style/pagecontent">
-
-
-    </ScrollView>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/event_content_viewpager"
+        style="@style/pagecontent"
+       >
+        <!--<android.support.v4.view.PagerTabStrip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            >
+        </android.support.v4.view.PagerTabStrip>-->
+    </android.support.v4.view.ViewPager>
 
 </LinearLayout>

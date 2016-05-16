@@ -14,22 +14,27 @@
             android:text="@string/sorttilte" />
     </RelativeLayout>
     <!-- 内容 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <LinearLayout style="@style/pagecontent">
 
-        <FrameLayout
-            android:id="@+id/left"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"></FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <FrameLayout
-            android:id="@+id/right"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="3"
-            android:background="#3333"></FrameLayout>
+            <ListView
+                android:id="@+id/sort_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:entries="@array/title"></ListView>
+
+
+            <FrameLayout
+                android:id="@+id/right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="#3333"></FrameLayout>
+        </LinearLayout>
     </LinearLayout>
 
 

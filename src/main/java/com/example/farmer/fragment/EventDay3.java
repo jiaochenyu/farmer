@@ -12,17 +12,16 @@ import com.example.farmer.MainActivity;
 import com.example.farmer.R;
 
 /**
- * Created by jcy on 2016/5/8.
+ * Created by jcy on 2016/5/14.
  */
-public class UserFragment extends Fragment {
-    private MainActivity mMainActivity;
+public class EventDay3 extends Fragment {
+    MainActivity mMainActivity;
     View view;
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         mMainActivity = (MainActivity) getActivity();
-        view = inflater.inflate(R.layout.user,null);
+        view = inflater.inflate(R.layout.event_day3,null);
         return view;
     }
 }
