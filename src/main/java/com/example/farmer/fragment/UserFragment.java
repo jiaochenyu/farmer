@@ -22,7 +22,7 @@ public class UserFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         mMainActivity = (MainActivity) getActivity();
-        view = inflater.inflate(R.layout.sort,null);
+        view = inflater.inflate(R.layout.user,null);
         return view;
     }
 }
