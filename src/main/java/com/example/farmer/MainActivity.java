@@ -24,10 +24,10 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
     RadioGroup mRadioGroup;
     FrameLayout mFrameLayout;
-
-
     HomeFragment mHomeFragment;
     EventFragment mEventFragment;
     SortFragment mSortFragment;
@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
 
     FragmentManager mFragmentManager;
     FragmentTransaction mFragmentTransaction;
-
 
 
     @Override
@@ -159,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
                 showFragment(HOME);
                 break;
             case R.id.event:
-               showFragment(EVENT);
+                showFragment(EVENT);
                 break;
             case R.id.sort:
                 showFragment(SORT);
