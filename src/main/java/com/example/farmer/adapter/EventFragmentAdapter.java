@@ -14,13 +14,13 @@ public class EventFragmentAdapter extends FragmentPagerAdapter {
     *活动日期 viewpaper绑定 fragment
     * */
     List<Fragment> mListfragment;
-    List<String> mTitleList;
 
 
-    public EventFragmentAdapter(FragmentManager fm, List<Fragment> list , List<String> titleList) {
+
+    public EventFragmentAdapter(FragmentManager fm, List<Fragment> list ) {
         super(fm);
         mListfragment = list;
-        mTitleList = titleList;
+
     }
 
     @Override
@@ -29,10 +29,6 @@ public class EventFragmentAdapter extends FragmentPagerAdapter {
     }
 
 
-    @Override
-    public CharSequence getPageTitle(int position) {
-        return (mTitleList.size() > position ? mTitleList.get(position) : "");
-    }
 
     @Override
     public int getCount() {

@@ -53,12 +53,73 @@
         <item name="android:textSize">15sp</item>
         <item name="android:gravity">center_vertical</item>
     </style>
+
+<!--我的部分 收藏商品的数据-->
+    <style name="my_collection_num">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+<!--我的主菜单部分 左侧第一张图片-->
+    <style name="my_menu_image_style">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!--我的主菜单部分 左侧第一个文字-->
+    <style name="my_menu_name_style">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <!--我的主菜单部分 右侧第二个文字-->
+    <style name="my_menu_name2_style">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:layout_weight">6</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <!--我的主菜单部分 右侧第二个图片-->
+    <style name="my_menu_image2_style">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+<!--我的收藏部分 textview的基本设置-->
+    <style name="my_collection_style_textview">
+        <item name="android:background">@drawable/my_border</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
     <!-- event 页面 活动日期 style-->
     <style name="event_day_style">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_weight">1</item>
-
+    </style>
+    <!-- event 页面 活动日期 radiobutton 样式-->
+    <style name="event_day_radiobutton">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@drawable/text</item>
+        <item name="android:background">@drawable/event_day_text_border</item>
     </style>
 
     <style name="homestylea">

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<module external.linked.project.id=":farmer" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$/.." external.system.id="GRADLE" external.system.module.group="Git-2.7.1.2-64-bit.exe" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+=======
+<<<<<<< HEAD
 <module external.linked.project.id=":farmer" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$/.." external.system.id="GRADLE" external.system.module.group="Farmer2" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
 =======
 <<<<<<< HEAD
@@ -8,6 +11,7 @@
 <module external.linked.project.id=":farmer" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$/.." external.system.id="GRADLE" external.system.module.group="Androidproject" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
 >>>>>>> 4596c862b518fae5da421d199ee4f60486b038b9
 >>>>>>> e4105c159361710b4542403365046f536100ad57
+>>>>>>> caadbea58b6c53debeec548f33c1a85b49f3b461
   <component name="FacetManager">
     <facet type="android-gradle" name="Android-Gradle">
       <configuration>
@@ -115,6 +119,16 @@
 <<<<<<< HEAD
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-classes" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-runtime-classes" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-verifier" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant-run-support" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jniLibs" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/manifests" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/pre-dexed" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/reload-dex" />
+=======
+<<<<<<< HEAD
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-classes" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-runtime-classes" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-safeguard" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-verifier" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant-run-support" />
@@ -127,6 +141,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/manifests" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/pre-dexed" />
 >>>>>>> e4105c159361710b4542403365046f536100ad57
+>>>>>>> caadbea58b6c53debeec548f33c1a85b49f3b461
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/res" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/restart-dex" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/rs" />
