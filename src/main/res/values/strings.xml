@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Farmer</string>
+    <string name="app_name">CallFarmer</string>
     <string name="eventtitle">活动</string>
     <string name="sorttilte">分类</string>
     <string name="cartitle">购物车</string>

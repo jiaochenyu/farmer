@@ -1,34 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
+              style="@style/mm"
               android:background="#63B8FF"
-              style="@style/mm">
+              android:orientation="vertical">
     <!--顶部标题-->
     <RelativeLayout
         android:id="@+id/eventtitle"
         style="@style/pagetitle">
+
         <TextView
             style="@style/pagetitletext"
             android:text="@string/eventtitle"
             />
     </RelativeLayout>
-    <include
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
-        layout="@layout/event_day_merge"/>
 
-    <!-- 内容 -->
-    <android.support.v4.view.ViewPager
-        android:id="@+id/event_content_viewpager"
+    <LinearLayout
         style="@style/pagecontent"
-       >
-        <!--<android.support.v4.view.PagerTabStrip
-            android:layout_width="wrap_content"
+        android:orientation="vertical"
+        >
+        <HorizontalScrollView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="top"
+            android:scrollbars="none">
+
+            <include
+                layout="@layout/event_day_merge"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+        </HorizontalScrollView>
+
+
+
+        <!-- 内容 -->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/event_content_viewpager"
+            style="@style/pagecontent"
             >
-        </android.support.v4.view.PagerTabStrip>-->
-    </android.support.v4.view.ViewPager>
+            <!--<android.support.v4.view.PagerTabStrip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                >
+            </android.support.v4.view.PagerTabStrip>-->
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
 
 </LinearLayout>
