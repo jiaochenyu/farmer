@@ -16,6 +16,13 @@ import android.widget.RadioGroup;
 import com.example.farmer.MainActivity;
 import com.example.farmer.R;
 import com.example.farmer.adapter.EventFragmentAdapter;
+import com.example.farmer.fragment.event.EventDay1;
+import com.example.farmer.fragment.event.EventDay2;
+import com.example.farmer.fragment.event.EventDay3;
+import com.example.farmer.fragment.event.EventDay4;
+import com.example.farmer.fragment.event.EventDay5;
+import com.example.farmer.fragment.event.EventDay6;
+import com.example.farmer.fragment.event.EventDay7;
 
 import java.util.ArrayList;
 import java.util.List;

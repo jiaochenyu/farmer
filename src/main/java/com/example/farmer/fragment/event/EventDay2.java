@@ -1,4 +1,4 @@
-package com.example.farmer.fragment;
+package com.example.farmer.fragment.event;
 
 
 import android.os.Bundle;
@@ -14,14 +14,14 @@ import com.example.farmer.R;
 /**
  * Created by jcy on 2016/5/14.
  */
-public class EventDay1 extends Fragment {
+public class EventDay2 extends Fragment {
     MainActivity mMainActivity;
     View view;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         mMainActivity = (MainActivity) getActivity();
-        view = inflater.inflate(R.layout.event_day1,null);
+        view = inflater.inflate(R.layout.event_day2,null);
         return view;
     }
 }
