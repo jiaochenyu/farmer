@@ -52,6 +52,7 @@ public class Sort_TitleAdapter extends RecyclerView.Adapter<Sort_TitleAdapter.My
         holder.mTextView.setText(mList.get(position).getContent());
 //        Log.e("jqchen",mList.get(position));
         //将数据保存在itemview的tag中，以便点击时进行获取
+        holder.itemView.setTag("isselected",mList.get(position).isSeltcted());
         holder.itemView.setTag(mList.get(position).getContent());
         //获取title的状态
         if (sortTitle.isSeltcted()){
