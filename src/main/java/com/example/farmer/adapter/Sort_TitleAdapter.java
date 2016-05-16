@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.farmer.R;
+import com.example.farmer.beans.SortTitle;
 
 import java.util.List;
 
@@ -15,7 +16,8 @@ import java.util.List;
  */
 public class Sort_TitleAdapter extends RecyclerView.Adapter<Sort_TitleAdapter.MyViewHolder> implements View.OnClickListener{
     //数据源
-    List<String> mList;
+    List<SortTitle> mList;
+    SortTitle sortTitle = new SortTitle("蔬菜豆菇",true);
     private OnRecyclerViewItemClickListener mOnItemClickListener = null;
     //定义监听接口
     public static interface OnRecyclerViewItemClickListener{
@@ -25,7 +27,7 @@ public class Sort_TitleAdapter extends RecyclerView.Adapter<Sort_TitleAdapter.My
         this.mOnItemClickListener = listener;
     }
 
-    public Sort_TitleAdapter(List<String> mList) {
+    public Sort_TitleAdapter(List<SortTitle> mList) {
         this.mList = mList;
     }
     //创建新View，被LayoutManager所调用
@@ -37,13 +39,26 @@ public class Sort_TitleAdapter extends RecyclerView.Adapter<Sort_TitleAdapter.My
         view.setOnClickListener(this);
         return myViewHolder;
     }
+
+    @Override
+    public long getItemId(int position) {
+        sortTitle = mList.get(position);
+        return super.getItemId(position);
+    }
+
     //将数据与界面进行绑定的操作
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        holder.mTextView.setText(mList.get(position));
+        holder.mTextView.setText(mList.get(position).getContent());
 //        Log.e("jqchen",mList.get(position));
         //将数据保存在itemview的tag中，以便点击时进行获取
-        holder.itemView.setTag(mList.get(position));
+        holder.itemView.setTag(mList.get(position).getContent());
+        //获取title的状态
+        if (sortTitle.isSeltcted()){
+            holder.itemView.setBackgroundResource(R.color.sort_content_background);
+        }else {
+            holder.itemView.setBackgroundResource(R.color.sort_title_background);
+        }
     }
 
     @Override
@@ -55,6 +70,8 @@ public class Sort_TitleAdapter extends RecyclerView.Adapter<Sort_TitleAdapter.My
     public void onClick(View v) {
         if (mOnItemClickListener != null){
             //getTag获取数据
+            sortTitle.setSeltcted(true);
+            notifyDataSetChanged();
             mOnItemClickListener.onItemClick(v, (String) v.getTag());
         }
     }

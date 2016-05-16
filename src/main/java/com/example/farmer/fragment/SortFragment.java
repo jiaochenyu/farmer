@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import com.example.farmer.R;
 import com.example.farmer.adapter.Sort_TitleAdapter;
+import com.example.farmer.beans.SortTitle;
 import com.example.farmer.fragment.sort.ContentFragment;
 import com.example.farmer.utils.DividerItemDecoration;
 
@@ -30,7 +31,7 @@ public class SortFragment extends Fragment{
     //适配器
     Sort_TitleAdapter titleAdapter;
     //处理事务
-    List<String> mList;
+    List<SortTitle> mList;
     LinearLayoutManager liner;
     FragmentManager mFragmentManager;
     FragmentTransaction mTransaction;
@@ -58,17 +59,28 @@ public class SortFragment extends Fragment{
     }
 
     private void initData() {
+        //以及标题
         mList = new ArrayList<>();
-        mList.add("蔬菜豆菇");
-        mList.add("新鲜蔬果");
-        mList.add("鲜肉蛋类");
-        mList.add("水产海鲜");
-        mList.add("速冻冻品");
-        mList.add("牛奶面点");
-        mList.add("粮油副食");
-        mList.add("零食酒水");
-        mList.add("进口食品");
-        mList.add("厨房用品");
+        SortTitle s1 = new SortTitle("蔬菜豆菇",true);
+        SortTitle s2 = new SortTitle("新鲜蔬果",false);
+        SortTitle s3 = new SortTitle("鲜肉蛋类",false);
+        SortTitle s4 = new SortTitle("水产海鲜",false);
+        SortTitle s5 = new SortTitle("速冻冻品",false);
+        SortTitle s6 = new SortTitle("牛奶面点",false);
+        SortTitle s7 = new SortTitle("粮油副食",false);
+        SortTitle s8 = new SortTitle("零食酒水",false);
+        SortTitle s9 = new SortTitle("进口食品",false);
+        SortTitle s10 = new SortTitle("厨房用品",false);
+        mList.add(s1);
+        mList.add(s2);
+        mList.add(s3);
+        mList.add(s4);
+        mList.add(s5);
+        mList.add(s6);
+        mList.add(s7);
+        mList.add(s8);
+        mList.add(s9);
+        mList.add(s10);
     }
 
     private void initView() {
@@ -85,7 +97,7 @@ public class SortFragment extends Fragment{
             @Override
             public void onItemClick(View view, String data) {
                 //Log.e("jqchen",data);
-                show(data);
+//                show(data);
                 mTransaction = mFragmentManager.beginTransaction();
                 mContentFragment = new ContentFragment();
 
