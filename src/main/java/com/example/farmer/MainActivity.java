@@ -1,4 +1,5 @@
 package com.example.farmer;
+
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -13,15 +14,15 @@ import com.example.farmer.fragment.SortFragment;
 import com.example.farmer.fragment.UserFragment;
 
 public class MainActivity extends AppCompatActivity {
+
     private static final int HOME = 1;
     private static final int EVENT = 2;
     private static final int SORT = 3;
     private static final int CAR = 4;
     private static final int USER = 5;
+    
     RadioGroup mRadioGroup;
     FrameLayout mFrameLayout;
-
-
     HomeFragment mHomeFragment;
     EventFragment mEventFragment;
     SortFragment mSortFragment;
@@ -30,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
 
     FragmentManager mFragmentManager;
     FragmentTransaction mFragmentTransaction;
-
 
 
     @Override
@@ -153,7 +153,7 @@ public class MainActivity extends AppCompatActivity {
                 showFragment(HOME);
                 break;
             case R.id.event:
-               showFragment(EVENT);
+                showFragment(EVENT);
                 break;
             case R.id.sort:
                 showFragment(SORT);

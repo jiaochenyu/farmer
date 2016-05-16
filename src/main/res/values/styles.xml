@@ -32,14 +32,14 @@
         <item name="android:textColor">@drawable/text</item>
     </style>
     <style name="pagetitle">
-        <item name="android:layout_weight">1</item>
+        <item name="android:layout_weight">2</item>
         <item name="android:layout_height">0dp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:background">@color/toptitle</item>
     </style>
     <!-- scrollview 样式-->
     <style name="pagecontent">
-        <item name="android:layout_weight">26</item>
+        <item name="android:layout_weight">28</item>
         <item name="android:layout_height">0dp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:orientation">vertical</item>
@@ -50,9 +50,10 @@
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:textColor">@color/white</item>
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">15sp</item>
         <item name="android:gravity">center_vertical</item>
     </style>
+<<<<<<< HEAD
 <!--我的部分 收藏商品的数据-->
     <style name="my_collection_num">
         <item name="android:textColor">#fff</item>
@@ -99,6 +100,29 @@
         <item name="android:textColor">@color/white</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:layout_height">wrap_content</item>
+=======
+    <!-- event 页面 活动日期 style-->
+    <style name="event_day_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+
+    </style>
+
+    <style name="homestylea">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+    <style name="homestyleb">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:background">@color/colorAccent</item>
+>>>>>>> caadbea58b6c53debeec548f33c1a85b49f3b461
     </style>
 
 
