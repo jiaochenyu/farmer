@@ -21,7 +21,7 @@ public class EventDay4 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         mMainActivity = (MainActivity) getActivity();
-        view = inflater.inflate(R.layout.event_day1,null);
+        view = inflater.inflate(R.layout.event_day4,null);
         return view;
     }
 }
