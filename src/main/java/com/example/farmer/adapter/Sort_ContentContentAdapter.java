@@ -15,9 +15,18 @@ import java.util.List;
 /**
  * Created by jqchen on 2016/5/17.
  */
-public class Sort_ContentContentAdapter extends RecyclerView.Adapter<Sort_ContentContentAdapter.MyViewHolder> {
+public class Sort_ContentContentAdapter extends RecyclerView.Adapter<Sort_ContentContentAdapter.MyViewHolder> implements View.OnClickListener{
     private List<SortContentContent> mList;
+    private OnRecyclerViewItemClickListener mOnItemClickListener = null;
 
+    //定义监听接口
+    public static interface OnRecyclerViewItemClickListener{
+
+        void onItemClick(View view,SortContentContent scc);
+    }
+    public void setmOnItemClickListener(OnRecyclerViewItemClickListener listener){
+        this.mOnItemClickListener = listener;
+    }
     public Sort_ContentContentAdapter(List<SortContentContent> mList) {
         this.mList = mList;
     }
@@ -26,6 +35,8 @@ public class Sort_ContentContentAdapter extends RecyclerView.Adapter<Sort_Conten
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.sort_content_content_item,parent,false);
         MyViewHolder myViewHolder = new MyViewHolder(view);
+        //注册监听事件
+        view.setOnClickListener(this);
         return myViewHolder;
     }
 
@@ -33,6 +44,14 @@ public class Sort_ContentContentAdapter extends RecyclerView.Adapter<Sort_Conten
     public void onBindViewHolder(MyViewHolder holder, int position) {
         holder.mTextView.setText(mList.get(position).getConten());
         holder.mImageView.setImageURI(mList.get(position).getUri());
+        holder.itemView.setTag(mList.get(position));
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (mOnItemClickListener != null){
+            mOnItemClickListener.onItemClick(v, (SortContentContent) v.getTag());
+        }
     }
 
     @Override

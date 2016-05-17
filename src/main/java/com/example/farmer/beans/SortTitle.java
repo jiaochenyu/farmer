@@ -7,6 +7,11 @@ import java.io.Serializable;
  * 此类用来描述分类一级标题
  */
 public class SortTitle implements Serializable {
+    /**
+     * id
+     * content 标题内容
+     * isseltected 是否选中
+      */
     private int id;
     private String content;
     private boolean isSeltcted;

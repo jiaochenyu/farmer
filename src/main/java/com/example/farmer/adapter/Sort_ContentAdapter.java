@@ -3,6 +3,7 @@ package com.example.farmer.adapter;
 import android.content.Context;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -69,6 +70,13 @@ public class Sort_ContentAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
             two.mRecyclerView.setLayoutManager(grid);
             //绑定适配器
             two.mRecyclerView.setAdapter(contentAdapter);
+            //对适配器进行监听
+            contentAdapter.setmOnItemClickListener(new Sort_ContentContentAdapter.OnRecyclerViewItemClickListener() {
+                @Override
+                public void onItemClick(View view, SortContentContent scc) {
+                    Log.e("jqchen",scc.getConten());
+                }
+            });
         }
     }
 
@@ -76,6 +84,8 @@ public class Sort_ContentAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     public int getItemCount() {
         return mList.size()*2;
     }
+
+
     public class ItemOneViewHolder extends RecyclerView.ViewHolder {
         TextView mTextView;
         public ItemOneViewHolder(View itemView) {
