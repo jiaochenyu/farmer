@@ -9,6 +9,8 @@
     <color name="texton">#00A653</color>
     <color name="textout">#999999</color>
     <color name="white">#FFFFFF</color>
+    <color name="home_background">#F4F4F4</color>
     <color name="sort_title_background">#F2F2F2</color>
     <color name="sort_content_background">#FFFFFF</color>
+    <color name="erjibiaoti">#666666</color>
 </resources>

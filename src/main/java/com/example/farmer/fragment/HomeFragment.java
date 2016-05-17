@@ -25,7 +25,7 @@ public class HomeFragment extends Fragment {
     MainActivity mMainActivity;
     View view;
     public static final int IMAGE_UPDATE = 1;
-    public static final int REFRESHTIME = 3 * 1000;
+    public static final int REFRESHTIME = 5 * 1000;
     public static final int IMAGE_CHANGED = 2;
     ViewPager mViewPager;
     ArrayList<View> mViewList;
