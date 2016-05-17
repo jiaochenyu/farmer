@@ -120,21 +120,32 @@
         <item name="android:textColor">@drawable/text</item>
 
     </style>
+<!--特价横线滑动图片的style-->
+    <style name="home_tejia_style_left">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:background">@color/home_background</item>
+    </style>
+    <style name="home_tejia_style_right">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:background">@color/home_background</item>
+    </style>
+    <style name="home_tejia_style_middle">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:background">@color/home_background</item>
+    </style>
 
-    <style name="homestylea">
-        <item name="android:layout_width">100dp</item>
-        <item name="android:layout_height">100dp</item>
-        <item name="android:paddingLeft">8dp</item>
-        <item name="android:paddingRight">8dp</item>
-        <item name="android:background">@color/colorPrimaryDark</item>
-    </style>
-    <style name="homestyleb">
-        <item name="android:layout_width">100dp</item>
-        <item name="android:layout_height">100dp</item>
-        <item name="android:paddingLeft">8dp</item>
-        <item name="android:paddingRight">8dp</item>
-        <item name="android:background">@color/colorAccent</item>
-    </style>
 
 
 </resources>
