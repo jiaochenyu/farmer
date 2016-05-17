@@ -61,16 +61,16 @@ public class SortFragment extends Fragment{
     private void initData() {
         //以及标题
         mList = new ArrayList<>();
-        SortTitle s1 = new SortTitle("蔬菜豆菇",true);
-        SortTitle s2 = new SortTitle("新鲜蔬果",false);
-        SortTitle s3 = new SortTitle("鲜肉蛋类",false);
-        SortTitle s4 = new SortTitle("水产海鲜",false);
-        SortTitle s5 = new SortTitle("速冻冻品",false);
-        SortTitle s6 = new SortTitle("牛奶面点",false);
-        SortTitle s7 = new SortTitle("粮油副食",false);
-        SortTitle s8 = new SortTitle("零食酒水",false);
-        SortTitle s9 = new SortTitle("进口食品",false);
-        SortTitle s10 = new SortTitle("厨房用品",false);
+        SortTitle s1 = new SortTitle(1,"蔬菜豆菇",true);
+        SortTitle s2 = new SortTitle(2,"新鲜蔬果",false);
+        SortTitle s3 = new SortTitle(3,"鲜肉蛋类",false);
+        SortTitle s4 = new SortTitle(4,"水产海鲜",false);
+        SortTitle s5 = new SortTitle(5,"速冻冻品",false);
+        SortTitle s6 = new SortTitle(6,"牛奶面点",false);
+        SortTitle s7 = new SortTitle(7,"粮油副食",false);
+        SortTitle s8 = new SortTitle(8,"零食酒水",false);
+        SortTitle s9 = new SortTitle(9,"进口食品",false);
+        SortTitle s10 = new SortTitle(10,"厨房用品",false);
         mList.add(s1);
         mList.add(s2);
         mList.add(s3);
@@ -95,18 +95,18 @@ public class SortFragment extends Fragment{
     private void initListener() {
         titleAdapter.setmOnItemClickListener(new Sort_TitleAdapter.OnRecyclerViewItemClickListener() {
             @Override
-            public void onItemClick(View view, String data) {
-                //Log.e("jqchen",data);
-//                show(data);
+            public void onItemClick(View view, SortTitle sortTitle) {
                 mTransaction = mFragmentManager.beginTransaction();
                 mContentFragment = new ContentFragment();
 
                 Bundle bundle = new Bundle();
-                bundle.putString("values",data);
+                bundle.putString("values",sortTitle.getContent());
                 mContentFragment.setArguments(bundle);
                 mTransaction.replace(R.id.right,mContentFragment);
                 mTransaction.commit();
+
             }
+
         });
     }
 

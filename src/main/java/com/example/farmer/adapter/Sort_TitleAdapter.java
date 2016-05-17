@@ -17,11 +17,10 @@ import java.util.List;
 public class Sort_TitleAdapter extends RecyclerView.Adapter<Sort_TitleAdapter.MyViewHolder> implements View.OnClickListener{
     //数据源
     List<SortTitle> mList;
-    SortTitle sortTitle = new SortTitle("蔬菜豆菇",true);
     private OnRecyclerViewItemClickListener mOnItemClickListener = null;
     //定义监听接口
     public static interface OnRecyclerViewItemClickListener{
-        void onItemClick(View view,String data);
+        void onItemClick(View view,SortTitle sortTitle);
     }
     public void setmOnItemClickListener(OnRecyclerViewItemClickListener listener){
         this.mOnItemClickListener = listener;
@@ -42,7 +41,6 @@ public class Sort_TitleAdapter extends RecyclerView.Adapter<Sort_TitleAdapter.My
 
     @Override
     public long getItemId(int position) {
-        sortTitle = mList.get(position);
         return super.getItemId(position);
     }
 
@@ -51,13 +49,14 @@ public class Sort_TitleAdapter extends RecyclerView.Adapter<Sort_TitleAdapter.My
     public void onBindViewHolder(MyViewHolder holder, int position) {
         holder.mTextView.setText(mList.get(position).getContent());
 //        Log.e("jqchen",mList.get(position));
-        //将数据保存在itemview的tag中，以便点击时进行获取
-        holder.itemView.setTag("isselected",mList.get(position).isSeltcted());
-        holder.itemView.setTag(mList.get(position).getContent());
-        //获取title的状态
-        if (sortTitle.isSeltcted()){
+        //将对象保存在itemview的tag中，以便点击时进行获取
+        holder.itemView.setTag(mList.get(position));
+        //如果选中，背景颜色修改为content的背景颜色
+        if (mList.get(position).isSeltcted()){
+            //选中
             holder.itemView.setBackgroundResource(R.color.sort_content_background);
         }else {
+            //未选中
             holder.itemView.setBackgroundResource(R.color.sort_title_background);
         }
     }
@@ -71,9 +70,8 @@ public class Sort_TitleAdapter extends RecyclerView.Adapter<Sort_TitleAdapter.My
     public void onClick(View v) {
         if (mOnItemClickListener != null){
             //getTag获取数据
-            sortTitle.setSeltcted(true);
-            notifyDataSetChanged();
-            mOnItemClickListener.onItemClick(v, (String) v.getTag());
+            mOnItemClickListener.onItemClick(v, (SortTitle) v.getTag());
+            mList.get(((SortTitle) v.getTag()).getId()).setSeltcted(true);
         }
     }
 
