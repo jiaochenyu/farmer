@@ -93,7 +93,6 @@
     </style>
 <!--我的收藏部分 textview的基本设置-->
     <style name="my_collection_style_textview">
-        <item name="android:background">@drawable/my_border</item>
         <item name="android:textSize">25sp</item>
         <item name="android:layout_weight">1</item>
         <item name="android:layout_width">0dp</item>
@@ -119,7 +118,7 @@
         <item name="android:paddingTop">10dp</item>
         <item name="android:textSize">15sp</item>
         <item name="android:textColor">@drawable/text</item>
-        <item name="android:background">@drawable/event_day_text_border</item>
+
     </style>
 
     <style name="homestylea">

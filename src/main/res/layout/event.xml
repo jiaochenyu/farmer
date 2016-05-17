@@ -14,40 +14,73 @@
             />
     </RelativeLayout>
 
-    <LinearLayout
-        style="@style/pagecontent"
-        android:orientation="vertical"
-        >
-        <HorizontalScrollView
-            android:id="@+id/event_scrollview"
+    <RelativeLayout
+        android:id="@+id/realativeLayout_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F2F2F2" >
+
+        <com.example.farmer.fragment.event.EventSyncHorizontalScrollView
+            android:id="@+id/horizontalScrollView"
             android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <RelativeLayout
+                android:id="@+id/event_day_relativeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="@color/toptitle" >
+
+                <RadioGroup
+                    android:id="@+id/event_day_radiogroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="38dip"
+                    android:layout_alignParentTop="true"
+                    android:background="#F2F2F2"
+                    android:orientation="horizontal" >
+                </RadioGroup>
+                <!-- 下滑线 -->
+                <ImageView
+                    android:id="@+id/event_day_indicator"
+                    android:layout_width="1dp"
+                    android:layout_height="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/toptitle"
+                    android:scaleType="matrix" />
+            </RelativeLayout>
+        </com.example.farmer.fragment.event.EventSyncHorizontalScrollView>
+        <ImageView
+            android:id="@+id/event_day_scroll_left"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:scrollbars="none">
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="1dp"
+            android:src="@drawable/event_day_navagation_scroll_left"
+            android:visibility="gone" >
+        </ImageView>
 
-            <include
-                layout="@layout/event_day_merge"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/event_day_scroll_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="1dip"
+            android:src="@drawable/event_day_navagation_scroll_right"
+            android:visibility="visible" >
+        </ImageView>
 
-        </HorizontalScrollView>
-
-
+    </RelativeLayout>
 
         <!-- 内容 -->
         <android.support.v4.view.ViewPager
             android:id="@+id/event_content_viewpager"
             style="@style/pagecontent"
             >
-            <!--<android.support.v4.view.PagerTabStrip
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="top"
-                >
-            </android.support.v4.view.PagerTabStrip>-->
         </android.support.v4.view.ViewPager>
-
-    </LinearLayout>
-
 
 </LinearLayout>
