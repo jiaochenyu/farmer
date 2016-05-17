@@ -2,13 +2,16 @@ package com.example.farmer.fragment.sort;
 
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.example.farmer.R;
 import com.example.farmer.adapter.Sort_ContentAdapter;
@@ -26,7 +29,8 @@ public class ContentFragment extends Fragment {
     View mView;
     List<SortContent> mList;
     List<SortContentContent> mmList;
-
+    //下拉刷新控件
+    SwipeRefreshLayout mSwipeRefreshLayout;
 
     @Nullable
     @Override
@@ -36,9 +40,27 @@ public class ContentFragment extends Fragment {
         initView();
         //初始化数据
         initData();
-        //setTextContent("");
+        //初始化适配器
         initAdapter();
+        //设置下拉刷新
+        initRefresh();
         return mView;
+    }
+
+    private void initRefresh() {
+        mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        mSwipeRefreshLayout.setRefreshing(false);
+                        Toast.makeText(getContext(),"下拉刷新",Toast.LENGTH_SHORT).show();
+                    }
+                },3000);
+
+            }
+        });
     }
 
     private void initAdapter() {
@@ -94,6 +116,8 @@ public class ContentFragment extends Fragment {
     }
 
     private void initView() {
+        mSwipeRefreshLayout = (SwipeRefreshLayout) mView.findViewById(R.id.swiprefresh);
+        mSwipeRefreshLayout.setProgressBackgroundColorSchemeColor(getResources().getColor(R.color.texton));
         mRecyclerView = (RecyclerView) mView.findViewById(R.id.sort_content_recycler);
         LinearLayoutManager linear = new LinearLayoutManager(getContext());
         mRecyclerView.setLayoutManager(linear);
