@@ -61,16 +61,16 @@ public class SortFragment extends Fragment{
     private void initData() {
         //以及标题
         mList = new ArrayList<>();
-        SortTitle s1 = new SortTitle(1,"蔬菜豆菇",true);
-        SortTitle s2 = new SortTitle(2,"新鲜蔬果",false);
-        SortTitle s3 = new SortTitle(3,"鲜肉蛋类",false);
-        SortTitle s4 = new SortTitle(4,"水产海鲜",false);
-        SortTitle s5 = new SortTitle(5,"速冻冻品",false);
-        SortTitle s6 = new SortTitle(6,"牛奶面点",false);
-        SortTitle s7 = new SortTitle(7,"粮油副食",false);
-        SortTitle s8 = new SortTitle(8,"零食酒水",false);
-        SortTitle s9 = new SortTitle(9,"进口食品",false);
-        SortTitle s10 = new SortTitle(10,"厨房用品",false);
+        SortTitle s1 = new SortTitle(0,"蔬菜豆菇",true);
+        SortTitle s2 = new SortTitle(1,"新鲜蔬果",false);
+        SortTitle s3 = new SortTitle(2,"鲜肉蛋类",false);
+        SortTitle s4 = new SortTitle(3,"水产海鲜",false);
+        SortTitle s5 = new SortTitle(4,"速冻冻品",false);
+        SortTitle s6 = new SortTitle(5,"牛奶面点",false);
+        SortTitle s7 = new SortTitle(6,"粮油副食",false);
+        SortTitle s8 = new SortTitle(7,"零食酒水",false);
+        SortTitle s9 = new SortTitle(8,"进口食品",false);
+        SortTitle s10 = new SortTitle(9,"厨房用品",false);
         mList.add(s1);
         mList.add(s2);
         mList.add(s3);
