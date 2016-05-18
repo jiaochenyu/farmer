@@ -102,7 +102,11 @@
     </style>
 <!--我的收藏部分 textview的基本设置-->
     <style name="my_collection_style_textview">
+<<<<<<< HEAD
         <item name="android:textSize">15sp</item>
+=======
+        <item name="android:textSize">25sp</item>
+>>>>>>> 78b4361eed059a4f32e3fa5f212334338a67f404
         <item name="android:layout_weight">1</item>
         <item name="android:layout_width">0dp</item>
         <item name="android:textColor">@color/white</item>
@@ -127,22 +131,32 @@
         <item name="android:paddingTop">10dp</item>
         <item name="android:textSize">15sp</item>
         <item name="android:textColor">@drawable/text</item>
-        <item name="android:background">@drawable/event_day_text_border</item>
-    </style>
 
-    <style name="homestylea">
-        <item name="android:layout_width">100dp</item>
-        <item name="android:layout_height">100dp</item>
-        <item name="android:paddingLeft">8dp</item>
-        <item name="android:paddingRight">8dp</item>
-        <item name="android:background">@color/colorPrimaryDark</item>
     </style>
-    <style name="homestyleb">
-        <item name="android:layout_width">100dp</item>
-        <item name="android:layout_height">100dp</item>
-        <item name="android:paddingLeft">8dp</item>
-        <item name="android:paddingRight">8dp</item>
-        <item name="android:background">@color/colorAccent</item>
+<!--特价横线滑动图片的style-->
+    <style name="home_tejia_style_left">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:background">@color/home_background</item>
+    </style>
+    <style name="home_tejia_style_right">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:background">@color/home_background</item>
+    </style>
+    <style name="home_tejia_style_middle">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:background">@color/home_background</item>
     </style>
 <!--账号设置中的Linearyout-->
     <style name="my_person_linear">
@@ -176,6 +190,7 @@
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>
     </style>
+
 
 
 </resources>

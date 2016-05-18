@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:background="#f4f4f4"
+              android:background="@color/home_background"
               android:orientation="vertical"
     >
     <!-- 顶部标题栏 -->
@@ -51,33 +51,47 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <ImageView
+            <android.support.v4.view.ViewPager
+                android:id="@+id/main_ad_show"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="#212121"/>
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/erjibiaoti"
+                android:text="限时抢购"/>
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
-                android:layout_height="100dp">
+                android:layout_height="100dp"
+                android:scrollbars="none">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                     <ImageView
-                        style="@style/homestylea"/>
+                        android:src="@drawable/home_tejia_a"
+                        style="@style/home_tejia_style_left"/>
 
                     <ImageView
-                        style="@style/homestyleb"/>
+                        android:src="@drawable/home_tejia_b"
+                        style="@style/home_tejia_style_middle"/>
 
                     <ImageView
-                        style="@style/homestylea"/>
+                        android:src="@drawable/home_tejia_c"
+                        style="@style/home_tejia_style_middle"/>
 
                     <ImageView
-                        style="@style/homestyleb"/>
+                        android:src="@drawable/home_tejia_d"
+                        style="@style/home_tejia_style_middle"/>
 
                     <ImageView
-                        style="@style/homestylea"/>
+                        android:src="@drawable/home_tejia_e"
+                        style="@style/home_tejia_style_right"/>
                 </LinearLayout>
             </HorizontalScrollView>
 

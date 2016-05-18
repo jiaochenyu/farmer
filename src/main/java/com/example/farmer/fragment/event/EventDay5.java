@@ -1,4 +1,4 @@
-package com.example.farmer.fragment;
+package com.example.farmer.fragment.event;
 
 
 import android.os.Bundle;
@@ -21,7 +21,7 @@ public class EventDay5 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         mMainActivity = (MainActivity) getActivity();
-        view = inflater.inflate(R.layout.event_day1,null);
+        view = inflater.inflate(R.layout.event_day5,null);
         return view;
     }
 }
