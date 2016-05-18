@@ -17,6 +17,10 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".fragment.my_account_set.MyAccountSetActivity">
+        </activity>
+        <activity android:name=".fragment.my_account_set.user_nick_set_Activity">
+        </activity>
     </application>
 
 </manifest>
