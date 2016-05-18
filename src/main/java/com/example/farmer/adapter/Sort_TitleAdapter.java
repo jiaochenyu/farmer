@@ -51,19 +51,12 @@ public class Sort_TitleAdapter extends RecyclerView.Adapter<Sort_TitleAdapter.My
     public void onBindViewHolder(MyViewHolder holder, int position) {
         holder.mTextView.setText(mList.get(position).getContent());
 //        Log.e("jqchen",mList.get(position));
-<<<<<<< HEAD
-        //将数据保存在itemview的tag中，以便点击时进行获取
-        //holder.itemView.setTag("isselected",mList.get(position).isSeltcted());
-        holder.itemView.setTag(mList.get(position).getContent());
-        //获取title的状态
-        if (sortTitle.isSeltcted()){
-=======
+
         //将对象保存在itemview的tag中，以便点击时进行获取
         holder.itemView.setTag(mList.get(position));
         //如果选中，背景颜色修改为content的背景颜色
         if (mList.get(position).isSeltcted()){
             //选中
->>>>>>> ce5f3233ad76570bf87f6fb5c76663571f21f973
             holder.itemView.setBackgroundResource(R.color.sort_content_background);
         }else {
             //未选中

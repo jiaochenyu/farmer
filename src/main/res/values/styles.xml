@@ -102,11 +102,7 @@
     </style>
 <!--我的收藏部分 textview的基本设置-->
     <style name="my_collection_style_textview">
-<<<<<<< HEAD
         <item name="android:textSize">15sp</item>
-=======
-        <item name="android:textSize">25sp</item>
->>>>>>> 78b4361eed059a4f32e3fa5f212334338a67f404
         <item name="android:layout_weight">1</item>
         <item name="android:layout_width">0dp</item>
         <item name="android:textColor">@color/white</item>
