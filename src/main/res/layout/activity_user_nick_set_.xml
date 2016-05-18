@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    tools:context="com.example.farmer.fragment.my_account_set.user_nick_set_Activity">
+    <!--顶部标题-->
+    <RelativeLayout
+        android:id="@+id/usertitle"
+        style="@style/pagetitle">
+        <ImageView
+            android:id="@+id/my_set_back"
+            android:layout_marginLeft="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/my_ic_brows_back"/>
+        <TextView
+            style="@style/pagetitletext"
+            android:text="修改昵称"
+            />
+    </RelativeLayout>
+    <!-- 内容 -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/usersetcontent"
+        style="@style/pagecontent">
+        <TextView
+            android:layout_weight=""
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+        </LinearLayout>
+</LinearLayout>
