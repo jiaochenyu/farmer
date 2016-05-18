@@ -31,44 +31,45 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <LinearLayout
-                android:layout_weight="6"
+                android:layout_weight="5"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:background="@drawable/user_bg"
                 android:orientation="vertical">
                 <!--头像  那一行的布局-->
                 <LinearLayout
+                    android:id="@+id/my_person_set"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="2"
+                    android:layout_weight="3"
                     android:orientation="horizontal"
                     >
                     <ImageView
-                        android:id="@+id/my_photo"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
+                        android:src="@drawable/user_default"
+                        android:id="@+id/my_set_photo"
                         android:layout_weight="1"
-                        android:src="@drawable/user_default"/>
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
                     <TextView
-                        android:id="@+id/my_name"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_toRightOf="@+id/my_photo"
-                        android:layout_weight="2"
-                        android:text="妈妈叫我去买菜"
+                        android:textSize="15dp"
                         android:textColor="@color/white"
-                        android:textSize="25dp"/>
-
-                    <ImageButton
+                        android:gravity="center_vertical"
+                        android:text="妈妈叫我去买菜"
+                        android:layout_weight="3"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@+id/my_name"
+                        android:layout_height="match_parent"/>
+                    <ImageView
+                        android:layout_marginRight="20sp"
+                        android:src="@drawable/my_indicator_right"
+                        android:id="@+id/my_set_go"
                         android:layout_weight="1"
-                        android:background="@drawable/ic_brows_forward"/>
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
                 </LinearLayout>
                 <!--收藏商品数量-->
                 <LinearLayout
+                    android:background="#AE3D9140"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="2"
@@ -97,11 +98,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="2"
-                    android:background="@drawable/my_border"
+<<<<<<< HEAD
+=======
+
+>>>>>>> 78b4361eed059a4f32e3fa5f212334338a67f404
                     android:orientation="horizontal">
                     <LinearLayout
                         android:layout_weight="1"
                         android:layout_width="0dp"
+                        android:background="#AE3D9140"
                         android:layout_height="match_parent">
                         <TextView
                             android:text="收藏的商品"

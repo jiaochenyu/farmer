@@ -1,4 +1,13 @@
+<!-- 设置dialog铺满 -->
 <resources>
+    <style name="transparentFrameWindowStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/user_photo_choose_bg</item>
+    </style>
+    <!-- 我的账号设置里的dialog进出动画 -->
+    <style name="main_menu_animstyle">
+        <item name="android:windowEnterAnimation">@anim/user_photo_dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/user_photo_dialog_out_anim</item>
+    </style>
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
@@ -93,8 +102,11 @@
     </style>
 <!--我的收藏部分 textview的基本设置-->
     <style name="my_collection_style_textview">
-        <item name="android:background">@drawable/my_border</item>
+<<<<<<< HEAD
+        <item name="android:textSize">15sp</item>
+=======
         <item name="android:textSize">25sp</item>
+>>>>>>> 78b4361eed059a4f32e3fa5f212334338a67f404
         <item name="android:layout_weight">1</item>
         <item name="android:layout_width">0dp</item>
         <item name="android:textColor">@color/white</item>
@@ -119,7 +131,7 @@
         <item name="android:paddingTop">10dp</item>
         <item name="android:textSize">15sp</item>
         <item name="android:textColor">@drawable/text</item>
-        <item name="android:background">@drawable/event_day_text_border</item>
+
     </style>
 <!--特价横线滑动图片的style-->
     <style name="home_tejia_style_left">
@@ -145,6 +157,38 @@
         <item name="android:paddingRight">6dp</item>
         <item name="android:scaleType">fitXY</item>
         <item name="android:background">@color/home_background</item>
+    </style>
+<!--账号设置中的Linearyout-->
+    <style name="my_person_linear">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+    <!--账号设置中的第一个文字-->
+    <style name="my_person_set_text1">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_weight">6</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#d6d3d3</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <!--账号设置中的第二个文字-->
+    <style name="my_person_set_text2">
+        <item name="android:layout_weight">3</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#d6d3d3</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <!--账号设置中的图片-->
+    <style name="my_person_set_image">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
     </style>
 
 
