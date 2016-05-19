@@ -116,7 +116,7 @@ public class ContentFragment extends Fragment {
     }
 
     private void initView() {
-        mSwipeRefreshLayout = (SwipeRefreshLayout) mView.findViewById(R.id.swiprefresh);
+        mSwipeRefreshLayout = (SwipeRefreshLayout) mView.findViewById(R.id.sort_swiprefresh);
         mSwipeRefreshLayout.setProgressBackgroundColorSchemeColor(getResources().getColor(R.color.texton));
         mRecyclerView = (RecyclerView) mView.findViewById(R.id.sort_content_recycler);
         LinearLayoutManager linear = new LinearLayoutManager(getContext());

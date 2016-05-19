@@ -4,17 +4,10 @@
     <string name="sorttilte">分类</string>
     <string name="cartitle">购物车</string>
     <string name="usertitle">我的</string>
-    <string-array name="title">
-        <item>蔬菜豆菇</item>
-        <item>新鲜蔬果</item>
-        <item>鲜肉蛋类</item>
-        <item>水产海鲜</item>
-        <item>速冻冻品</item>
-        <item>牛奶面点</item>
-        <item>粮油副食</item>
-        <item>零食酒水</item>
-        <item>进口食品</item>
-        <item>厨房用品</item>
-    </string-array>
+
+    <string name="sort_menu_default">默认</string>
+    <string name="sort_menu_new">最新</string>
+    <string name="sort_menu_amount">销量</string>
+    <string name="sort_menu_price">价格</string>
 
 </resources>

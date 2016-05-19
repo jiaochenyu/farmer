@@ -1,6 +1,7 @@
 package com.example.farmer.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -10,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.farmer.R;
+import com.example.farmer.activity.SortMenuActivity;
 import com.example.farmer.beans.SortContent;
 import com.example.farmer.beans.SortContentContent;
 
@@ -75,6 +77,9 @@ public class Sort_ContentAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
                 @Override
                 public void onItemClick(View view, SortContentContent scc) {
                     Log.e("jqchen",scc.getConten());
+                    Intent intent = new Intent(mContext, SortMenuActivity.class);
+                    intent.putExtra("values",scc);
+                    mContext.startActivity(intent);
                 }
             });
         }
